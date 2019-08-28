@@ -6,23 +6,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Irish Language Statistics</title>
 
+    <!--- Style Sheets --->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css" type="text/css" />
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" type="text/css" />
-    
-    <script type="text/javascript" src="assets/js/d3.min.js"></script>
-    <script type="text/javascript" src="assets/js/crossfilter.min.js"></script>
-    <script type="text/javascript" src="assets/js/dc.min.js"></script>
-    <script type="text/javascript" src="assets/js/queue.min.js"></script>
-    <script type="text/javascript" src="assets/js/graph.js"></script>
-    <script type="text/javascript" src="assets/js/main.js"></script>
 
 </head>
 
 <body>
-    <div id="irish-speakers2011"<span>Number of Irish Speakers from 1926 to 2011</span></div>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">Top Spotify Tracks of 2018</a>
+    </nav>
+
+    <!--- Dashboard section containing two containers with summary statistics --->
+    <section>
+        <div class="container-fluid">
+
+            <div class="row">
+
+                <!--- Total songs tile --->
+                <div class="col-lg-4 col-md-4 col-sm-12 px-2">
+                    <div class="card text-white bg-secondary mb-3 shadow-box tile-s1">
+                        <div class="card-header">Total Songs</div>
+                        <div class="card-body">
+                            <div id="totalSongsTile"></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section>
+        <h1>Energy and Loudness</h1>
+        <div id="danceability-chart"></div>
+    </section>
+
+    <!--- JavaScript Files --->
+    <script src="assets/js/jquery-3.4.1.js"></script>
+    <script src="assets/js/d3.min.js"></script>
+    <script src="assets/js/crossfilter.min.js"></script>
+    <script src="assets/js/dc.min.js"></script>
+    <script src="assets/js/queue.min.js"></script>
+    <script type="text/javascript" src="assets/js/graph.js"></script>
+    <script type="text/javascript" src="assets/js/main.js"></script>
+
 </body>
 
 </html>
